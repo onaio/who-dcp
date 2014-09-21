@@ -1,4 +1,12 @@
 .navbar-inner {
     background-image: none;
-    background-color: #1e2533;
+    background-color: #0091D8;
+}
+
+.navbar .nav > li > a {
+ 	color: #90E3FF;
+}
+
+#div.ona-tagline {
+	color: #666666;
 }
