@@ -49,6 +49,12 @@
         border:1px solid #ddd;
         padding:2em;
     }
+    .navbar-nav > li > a {
+        padding: 0;
+    }
+    .navbar-nav > li > a:hover{
+        background: transparent;
+    }
     </style>
 {% endblock %}
 
@@ -58,9 +64,9 @@
 {% endif %}
 <div id="ona-tagline">
     <h4>WORLD HEALTH ORGANIZATION | DATA COORDINATION PLATFORM</h4>
-    <h1>Harmonized Ebola Response</h1>
-    
-    <h4 class="tag-info">Harmonized data collection and management tools for effective Ebola response, targeting health workforce and facility safety, infection prevention and control.</h4>
+    <h1>{% trans "Harmonized Response" %}</h1>
+
+    <h4 class="tag-info">{% blocktrans %}WHO Data Coordination Platform (DCP) for Secure management of electronic forms and data in real-time between health and development partners.{% endblocktrans %}</h4>
 </div>
 <div class="row">
     <div class="col-md-8">
@@ -94,10 +100,7 @@
 
 <div class="row">
     <div class="col-md-8 ona-tagline">
-
-    <h4 class="tag-info">Partners</h4>
     <!--<a href="http://www.unicef.org"><img alt="UNICEF" width="250" src="{{STATIC_URL}}images/unicef-logo.gif" /></a>&nbsp;&nbsp;-->
-          <a href="http://www.who.int/hrp/en/"><img alt="HRP" src="{{STATIC_URL}}images/hrp-logo.png" /></a>
     </div>
 </div>
 
