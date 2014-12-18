@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>{% block title %}{{ SITE_NAME }}{% endblock %}WHO DCP</title>
+  <title>{% block title %}{{ SITE_NAME }}{% endblock %}: WHO DCP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if GOOGLE_SITE_VERIFICATION %}
+    <meta name="google-site-verification" content="{{ GOOGLE_SITE_VERIFICATION }}" />
+    {% endif %}
     {% block styles %}
     <!-- Bootstrap -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
