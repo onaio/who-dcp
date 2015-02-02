@@ -59,9 +59,9 @@
 {% endblock %}
 
 {% block content %}
-{% if SITE_READ_ONLY%}
-<h1>{% blocktrans %}We're down for maintenance. We will be back shortly.{% endblocktrans %}</h1>
-{% endif %}
+{% if True%}
+<h1>{% blocktrans %}We're down for unscheduled maintenance. We will be back shortly.{% endblocktrans %}</h1>
+{% else %}
 <div id="ona-tagline">
     <h4>WORLD HEALTH ORGANIZATION | DATA COORDINATION PLATFORM</h4>
     <h1>{% trans "Harmonized Response" %}</h1>
@@ -106,3 +106,4 @@
 
         </div>
         {% endblock %}
+{% endif %}
